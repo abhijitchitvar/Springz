@@ -3,8 +3,7 @@ This is my basic design of HTML CSS for my website © All Rights Reserved
 
 Welcome to the GitHub repository for www.springz.app! This repository serves as the central hub for managing the source code and development of my personal website.
 
-About www.springz.app
-www.springz.app is a online media streaming & e-commerce site, etc. It showcases my work, projects, blog posts, and other relevant information.
+About www.springz.app is a online media streaming & e-commerce site, etc. It showcases my work, projects, blog posts, and other relevant information.
 
 Features
 Portfolio Showcase: Displaying my latest projects and works.
