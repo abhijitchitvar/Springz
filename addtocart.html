@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Add to Cart</title>
+<style>
+  .quantity {
+    display: flex;
+    align-items: center;
+  }
+  .quantity input {
+    width: 50px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<h2>Product Name</h2>
+
+<div class="quantity">
+  <button onclick="decrement()">-</button>
+  <input type="number" id="quantity" value="1" min="1">
+  <button onclick="increment()">+</button>
+</div>
+
+<button onclick="addToCart()">Add to Cart</button>
+
+<script>
+  function increment() {
+    const quantityInput = document.getElementById('quantity');
+    quantityInput.value = parseInt(quantityInput.value) + 1;
+  }
+
+  function decrement() {
+    const quantityInput = document.getElementById('quantity');
+    const newValue = parseInt(quantityInput.value) - 1;
+    quantityInput.value = newValue > 0 ? newValue : 1;
+  }
+
+  function addToCart() {
+    const quantity = document.getElementById('quantity').value;
+    // Add your logic here to add the product to the cart with the specified quantity
+    console.log("Added to cart: " + quantity + " items.");
+  }
+</script>
+
+</body>
+</html>
